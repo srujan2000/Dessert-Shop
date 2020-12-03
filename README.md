@@ -1,2 +1,2 @@
 # Dessert-Shop
-It is Dessert Shop ,you can add items to cart.
+It is a dynamic site ,you can add items to cart.
