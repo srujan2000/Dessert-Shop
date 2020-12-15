@@ -3,121 +3,117 @@ body{
     overflow-x: hidden;
 }
 
+body button{
+    outline: none;
+}
+
 #navbar{
    width: 100%;
    height: auto;
-   /* position: fixed; */
-   background: #EECDA3;  /* fallback for old browsers */
-   background: -webkit-linear-gradient(to right, #EF629F, #EECDA3);  /* Chrome 10-25, Safari 5.1-6 */
-   background: linear-gradient(to right, #EF629F, #EECDA3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-   margin-top: 0px;
-   
+   background: #EEfCDA3;  
+   background: -webkit-linear-gradient(to right, #EF629F, #EECDA3); 
+   background: linear-gradient(to right, #EF629F, #EECDA3); 
+   margin-top: 0px; 
+   padding-top: 0px;
+    padding-bottom: 15px;
 }
 
-.navbar-brand{
-    display: flex;
-}
 
-.navbar-brand img{
-    margin-right: 0px;
+#navbar img{
+    display: block;
+    height: 120px;
 }
 
 .navbar-brand h1{
     font-family:sans-serif;
-    font-size: 32px;
-    color: #EECDA3;
-    padding-top: 10px;
+    margin-top: -80px;
+    margin-left: 100px;
+
 }
 
 .navbar-brand h1 a{
     text-decoration: none;
-    font-family:sans-serif;
-    font-size: 32px;
     color: #EECDA3;
-    padding-top: 10px;
 }
 
-.items{
-    width: 70%;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.items li{
+.lists{
     list-style: none;
-    padding-top: 20px;
-    padding-right: 20px;
+    text-align: right;
+    font-size: 24px;
+    margin-top: -50px;
 }
 
-.items li a{
+.list-items{
+    display: inline;
+    padding-right:5px ;
+}
+
+.list-items a{
     text-decoration: none;
-    color: palevioletred;
-    font-size: 30px;
-    font-weight: 600;
-    font-family: sans-serif;
+    color: #EF629F;
 }
 
+
+hr{
+    display: none;
+}
 
 #cart{
     font-family:  -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    text-align: center;
 }
 
 #cart > h1{
     font-size: 42px;
-    margin-left: 680px;
      color: #EF629F;
     margin-bottom: 50px;
 }
 
 #cart .conhead{
-    margin-left: 150px;
-    margin-right: 150px;
+    text-align: center;
     display: grid;
     grid-template-columns: 33% 33% 33%;
-    column-gap: 15px;
     padding-left: 10px;
     padding-right: 10px;
 }
 
 #cart .conhead #headone{
     font-size: 32px;
-    margin-left: 100px;
     color: #bb105a;
 }
 
 #cart .conhead #headtwo{
    font-size: 32px;
-   margin-left: 100px;
    color: #bb105a;
 }
 
 #cart .conhead #headthree{
    font-size: 32px;
-   margin-left: 100px;
    color: #bb105a;
 }
 
 #cart .container{
-    margin-left: 150px;
-    margin-right: 150px;
-    min-height: 400px;
+    margin-left: 50px;
+    margin-right: 50px;
+    /* min-height: 400px; */
     border: 2px solid #bb105a;
     display: grid;
     grid-template-columns: 33% 33% 33%;
     column-gap: 15px;
-    padding-left: 10px;
-    padding-right: 10px;
 }
-
 
 .images{
-    margin-bottom: 70px;
+    margin-bottom: 10px;
 }
 
+
 .quantities{
-  margin-top: 50px;
-  margin-left: 70px;
-  display:flex;
+    text-align: center;
+    display: block;
+    margin: auto;
+   margin-top: 50px; 
+   /* margin-left: 120px; */
+   display:flex; 
   justify-content : space-around; 
   flex-direction: row;
   width: 200px;
@@ -132,27 +128,27 @@ body{
     font-weight: 600;
     border-radius: 50%;
     padding: 2px 7px;
-    margin: 7px 9px 7px 7px;
+    /* margin: 7px 9px 7px 7px; */
     border: none;
     outline:none;
   }
   
 .quantities #num{
     width: 42px;
-    margin-top: 20px;
+    margin-top: 10px;
   }
   
 
  .prices{
-     margin-top: 50px;
-     margin-left: 100px;
+     /* margin-top: 0px; */
+     /* margin-left: 100px; */
      font-size: 24px;
  }
 
 
 #cart > button{
     margin-top: 50px;
-    margin-left: 650px;
+    /* margin-left: 650px; */
     background-color: #bb105a;
     border: none;
     padding: 20px;
@@ -166,12 +162,13 @@ body{
  }
 
  #backhome{
+     text-align: center;
      outline: none;
  }
 
  .totalPrice{
     font-family:  -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-     margin-left: 1000px;
+    text-align: center;
  }
 
 .totalPrice button{
@@ -181,7 +178,6 @@ body{
     border: none;
     outline: none;
     border-radius: 5px;
-    margin-left: 5px;
 }
 
 .totalPrice button a{
@@ -193,21 +189,65 @@ body{
 
 
 #main-footer{
-    height: 180px;
+    text-align: center;
+    padding: 15px 5px;
     width: 100%;
     background-color: #bb105a;
-    padding-top: 15px;
-    margin-top: 140px;
+    margin-top: 50px;
 }
 
 #main-footer h1{
-    margin-left: 620px;
+    /* margin-left: 620px; */
     font-size: 32px;
     font-family:  -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
 #main-footer h3{
-    margin-left: 650px;
+    /* margin-left: 650px; */
     font-size: 24px;
     font-family:  -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+
+@media only screen and (max-width:922px){
+    #cart .conhead{
+       display: none;
+    }
+
+    #cart .container{
+        grid-template-columns: 100%;
+        border: none;
+    }
+
+    .images{
+        margin-bottom: 0px;
+    }
+
+   .prices{
+        margin-top: -50px;
+    }
+
+    .quantities{
+        margin-top: 0px; 
+       /* margin-left: 100px;
+       margin-right: 100px; */
+    }
+    hr{
+        display: block;
+    }
+
+    .images img{
+        /* display: block; */
+        margin-left: 30px;
+    }
+}
+
+
+@media  only screen and (max-width:421px){
+    .navbar-brand h1{
+       display: none;
+    }
+    .lists{
+        margin-top: -80px;
+    }
 }

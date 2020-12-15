@@ -10,63 +10,51 @@ body button{
 #navbar{
    width: 100%;
    height: auto;
-   /* position: fixed; */
-   background: #EECDA3;  /* fallback for old browsers */
-   background: -webkit-linear-gradient(to right, #EF629F, #EECDA3);  /* Chrome 10-25, Safari 5.1-6 */
-   background: linear-gradient(to right, #EF629F, #EECDA3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-   margin-top: 0px;
-   
+   background: #EEfCDA3;  
+   background: -webkit-linear-gradient(to right, #EF629F, #EECDA3); 
+   background: linear-gradient(to right, #EF629F, #EECDA3); 
+   margin-top: 0px; 
+   padding-top: 0px;
+    padding-bottom: 15px;
 }
 
-.navbar-brand{
-    display: flex;
-}
 
-.navbar-brand img{
-    margin-right: 0px;
+#navbar img{
+    display: block;
+    height: 120px;
 }
 
 .navbar-brand h1{
     font-family:sans-serif;
-    font-size: 32px;
-    color: #EECDA3;
-    padding-top: 10px;
+    margin-top: -80px;
+    margin-left: 100px;
+
 }
 
 .navbar-brand h1 a{
     text-decoration: none;
-    font-family:sans-serif;
-    font-size: 32px;
     color: #EECDA3;
-    padding-top: 10px;
 }
 
-.items{
-    width: 70%;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.items li{
+.lists{
     list-style: none;
-    padding-top: 20px;
-    padding-right: 20px;
+    text-align: right;
+    font-size: 24px;
+    margin-top: -50px;
 }
 
-.items li a{
+.list-items{
+    display: inline;
+    padding-right:5px ;
+}
+
+.list-items a{
     text-decoration: none;
-    color: palevioletred;
-    font-size: 30px;
-    font-weight: 600;
-    font-family: sans-serif;
+    color: #EF629F;
 }
-
-/* .items li a:hover{
-    color: aqua;
-} */
 
 #about{
-    /* margin-top: 10px; */
+    text-align: center;
     min-height: 500px;
     min-width: 100%;
     background: url(../images/head.jpg);
@@ -81,7 +69,7 @@ body button{
     -webkit-text-fill-color: transparent;
     font-weight: 700;
     margin-top: 120px;
-    margin-left: 600px;
+    /* margin-left: 600px; */
 }
 
 #about p{
@@ -90,11 +78,11 @@ body button{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 500;
-    margin-left: 650px;
+    /* margin-left: 650px; */
 }
 
 #about button{
-    margin-left: 680px;
+    /* margin-left: 680px; */
     height: 40px;
     width: 100px;
     font-size: 24px;
@@ -121,12 +109,11 @@ body button{
 #products{
     background-color: #EECDA3;
     font-family:  -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-
+    text-align: center;
 }
 
 #products h1{
     font-size: 56px;
-    margin-left: 650px;
     color: #EF629F;
 }
 
@@ -142,28 +129,21 @@ body button{
 }
 
 #products .container{
-    min-height: 400px;
-    margin-left: 100px;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-column-gap: 10px;
+    /* grid-column-gap: 10px; */
     grid-row-gap: 15px;
 }
 
-#products .item1 img{
+/* #products .item1 img{
     margin-bottom: 10px;
-}
-
-#products .item1 h3{
-    margin-left: 25px;
-}
+} */
 
 #products .item1 button{
     background: -webkit-linear-gradient(#EF629F,#EECDA3);
     border: none;
     font-size: 18px;
-    height: 30px;
-    margin-left: 30px;
+    padding: 10px;
 }
 
 #products .item1 button a{
@@ -171,12 +151,12 @@ body button{
 }
 
 #products .item2 img{
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 
-#products .item2 h3{
+/* #products .item2 h3{
     margin-left: 30px;
-}
+} */
 
 #products .item2 button a{
     text-decoration: none;
@@ -186,17 +166,16 @@ body button{
     background: -webkit-linear-gradient(#EF629F,#EECDA3);
     border: none;
     font-size: 18px;
-    height: 30px;
-    margin-left: 40px;
+    padding: 10px;
+    /* margin-left: 40px; */
 }
 
-#products .item3 img{
-    margin-bottom: 10px;
-}
+/* #products .item3 img{
+    /* margin-bottom: 10px; */
 
-#products .item3 h3{
+/* #products .item3 h3{
     margin-left: 45px;
-}
+} */
 
 #products .item3 button a{
     text-decoration: none;
@@ -206,18 +185,17 @@ body button{
     background: -webkit-linear-gradient(#EF629F,#EECDA3);
     border: none;
     font-size: 18px;
-    height: 30px;
-    margin-left: 40px;
+    padding: 10px;
 }
 
 
-#products .item4 img{
+/* #products .item4 img{
     margin-bottom: 10px;
-}
+} */
 
-#products .item4 h3{
+/* #products .item4 h3{
     margin-left: 60px;
-}
+} */
 
 #products .item4 button a{
     text-decoration: none;
@@ -227,21 +205,20 @@ body button{
     background: -webkit-linear-gradient(#EF629F,#EECDA3);
     border: none;
     font-size: 18px;
-    height: 30px;
-    margin-left: 60px;
+    padding: 10px;
 }
 
-#products .item5 img{
+/* #products .item5 img{
     margin-bottom: 10px;
-}
+} */
 
-#products .item5 h2{
+/* #products .item5 h2{
     margin-left: 25px;
-}
+} */
 
-#products .item5 h3{
+/* #products .item5 h3{
     margin-left: 25px;
-}
+} */
 
 #products .item5 button a{
     text-decoration: none;
@@ -251,21 +228,20 @@ body button{
     background: -webkit-linear-gradient(#EF629F,#EECDA3);
     border: none;
     font-size: 18px;
-    height: 30px;
-    margin-left: 35px;
+    padding: 10px;
 }
 
-#products .item6 img{
+/* #products .item6 img{
     margin-bottom: 10px;
-}
+} */
 
-#products .item6 h2{
+/* #products .item6 h2{
     margin-left: 35px;
 }
 
 #products .item6 h3{
     margin-left: 40px;
-}
+} */
 
 #products .item6 button a{
     text-decoration: none;
@@ -275,11 +251,10 @@ body button{
     background: -webkit-linear-gradient(#EF629F,#EECDA3);
     border: none;
     font-size: 18px;
-    height: 30px;
-    margin-left: 35px;
+    padding: 10px;
 }
 
-#products .item7 img{
+/* #products .item7 img{
     margin-bottom: 10px;
 }
 
@@ -289,7 +264,7 @@ body button{
 
 #products .item7 h3{
     margin-left: 55px;
-}
+} */
 
 #products .item7 button a{
     text-decoration: none;
@@ -299,11 +274,10 @@ body button{
     background: -webkit-linear-gradient(#EF629F,#EECDA3);
     border: none;
     font-size: 18px;
-    height: 30px;
-    margin-left: 55px;
+    padding: 10px;
 }
 
-#products .item8 img{
+/* #products .item8 img{
     margin-bottom: 10px;
 }
 
@@ -313,7 +287,7 @@ body button{
 
 #products .item8 h3{
     margin-left: 55px;
-}
+} */
 
 #products .item8 button a{
     text-decoration: none;
@@ -323,32 +297,32 @@ body button{
     background: -webkit-linear-gradient(#EF629F,#EECDA3);
     border: none;
     font-size: 18px;
-    height: 30px;
-    margin-left: 55px;
+    padding: 10px;
 }
 
 #branches{
+    text-align: center;
     margin-bottom: 40px;
 }
 
 #branches>h1{
     font-size: 48px;
-    margin-left: 650px;
     color: #EF629F;
     margin-bottom: 50px;
 }
 
 #branches .container{
-    margin-left: 120px;
-    margin-right: 120px;
+    margin-left: 50px;
+    margin-right: 50px;
     min-height: 250px;
     display: grid;
     grid-template-columns: 33% 33% 33%;
-    grid-column-gap: 20px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
 }
 
 .branch1{
-    height: 200px;
+    /* height: 200px; */
     width: auto;
     border: 5px solid #EF629F;
     padding-right:10px ;
@@ -359,14 +333,13 @@ body button{
 
 .branch1 h1{
     font-size: 32px;
-    margin-left: 130px;
 }
-.branch1 h2{
+/* .branch1 h2{
     margin-left:80px;
-}
+} */
 
 .branch2{
-    height: 200px;
+    /* height: 200px; */
     width: auto;
     border: 5px solid #EF629F;
     padding-right:10px ;
@@ -377,15 +350,14 @@ body button{
 
 .branch2 h1{
     font-size: 32px;
-    margin-left: 130px;
 }
-.branch2 h2{
+/* .branch2 h2{
     margin-left:80px;
-}
+} */
 
 
 .branch3{
-    height: 200px;
+    /* height: 200px; */
     width: auto;
     border: 5px solid #EF629F;
     padding-right:10px ;
@@ -396,14 +368,14 @@ body button{
 
 .branch3 h1{
     font-size: 32px;
-    margin-left: 130px;
 }
-.branch3 h2{
+/* .branch3 h2{
     margin-left:80px;
-}
+} */
 
 
 #main-footer{
+    text-align: center;
     height: 180px;
     width: 100%;
     background-color: #bb105a;
@@ -411,13 +383,64 @@ body button{
 }
 
 #main-footer h1{
-    margin-left: 620px;
     font-size: 32px;
     font-family:  -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
 #main-footer h3{
-    margin-left: 650px;
     font-size: 24px;
     font-family:  -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+
+
+@media (min-width:576px) and (max-width:1455px){
+    #products .container{
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media only screen and (max-width:833px){
+    #branches .container{
+        grid-template-columns: 100%;
+    }
+}
+
+
+@media only screen and (max-width:576px){
+    #products .container{
+        grid-template-columns: 100%;
+    }
+    #navbar h1{
+        font-size: 1rem;
+    }
+
+    #navbar{
+        height: 100px;
+    }
+
+    #navbar img{
+         height: 120px;
+         margin-top: -10px;
+    }
+
+    .lists{
+        margin-top: -30px;
+        font-size: 18px;
+    }
+}
+
+
+@media  only screen and (max-width:421px){
+    .navbar-brand h1{
+       display: none;
+    }
+
+    .lists{
+        margin-top: -80px;
+    }
+
+    .lists-items{
+        padding-right: 2px;
+    }
 }

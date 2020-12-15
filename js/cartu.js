@@ -26,7 +26,7 @@ if(items.length === 0 || items === null){
     document.querySelector('.conhead').style.display = `none`
     document.querySelector('.totalPrice').style.display = `none`
     document.getElementById('cart').innerHTML =`
-    <h1 style="margin-left:570px";>No Items in the Cart</h1>
+    <h1 >No Items in the Cart</h1>
      <button id="backhome"><a href="index.html" class="backtohome">Back to Home</a></button>
     `
 }else{
@@ -44,7 +44,7 @@ function ShowCartItems(item){
       ${item[2]}
    </div>
    <div >
-       <h2 id="itemName" style="margin-left: 50px;">${item[1]}</h2>
+       <h2 id="itemName">${item[1]}</h2>
    </div>
 </div>
 <div class="quantity">
