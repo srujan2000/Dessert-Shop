@@ -7,16 +7,16 @@ body button{
     outline: none;
 }
 
-#navbar{
+ #navbar{
    width: 100%;
    height: auto;
-   background: #EEfCDA3;  
+    background: #EEfCDA3;  
    background: -webkit-linear-gradient(to right, #EF629F, #EECDA3); 
    background: linear-gradient(to right, #EF629F, #EECDA3); 
    margin-top: 0px; 
    padding-top: 0px;
     padding-bottom: 15px;
-}
+} 
 
 
 #navbar img{
@@ -37,13 +37,14 @@ body button{
 }
 
 .lists{
-    list-style: none;
     text-align: right;
+    list-style: none;
     font-size: 24px;
     margin-top: -50px;
 }
 
 .list-items{
+    text-align: right;
     display: inline;
     padding-right:5px ;
 }
@@ -379,7 +380,7 @@ body button{
     height: 180px;
     width: 100%;
     background-color: #bb105a;
-    padding-top: 15px;
+    padding: 15px 5px;
 }
 
 #main-footer h1{
